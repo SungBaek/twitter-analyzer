@@ -1,0 +1,27 @@
+﻿extends layout
+
+block content
+    div.tweet-background
+        div.tweet-content
+            h1 User Info
+            div.profile
+                img(src=user.profile_image_url, alt="profile picture")#profile_img
+                p#profile-info #{user.name}  (#{user.score} pts)
+            hr
+            h2 Displaying most recent #{tweets.length} tweets    
+            div.tweets
+                span Sort By :
+                select#sort_select
+                    option(value="date") date 
+                    option(value="retweets") retweets
+                span  Show Image : 
+                input(type="checkbox" name="img" value="show" checked)#img_check
+                ul#tweets
+                    each tweet in tweets
+                        li.tweet(data-date=tweet.date, data-count=tweet.count)
+                            p 
+                              img(src=tweet.img alt="twitter_img").tweet_img    
+                              |     Created At: #{tweet.date} Retweets : #{tweet.count}
+                              | <br>
+                              | #{tweet.text}
+                             

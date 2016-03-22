@@ -1,0 +1,15 @@
+{
+  "name": "Checkr",
+  "version": "0.0.0",
+  "description": "Checkr",
+  "main": "app.js",
+  "author": {
+    "name": "joon8_000",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "3.4.4",
+    "jade": "*",
+    "stylus": "*"
+  }
+}
