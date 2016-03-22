@@ -19,7 +19,7 @@ ul {
     padding-top: 200px;
     position: relative;
     min-height: 100%;
-    background-color: #5b5b5a;
+    background-image: url("../images/twitter-background.jpg");
     text-align:center;
 }
 .background input[type=text]{
@@ -34,6 +34,16 @@ ul {
     font-size: 50px;
     padding-bottom: 30px;
     color: white;
+    text-shadow: 5px 5px 10px black;
+}
+
+#twitter_input{
+    vertical-align: top;
+}
+
+#submit_button{
+    margin-left: 10px;
+    vertical-align: top;
 }
 
 .tweet-content{
@@ -58,22 +68,24 @@ ul {
     font-weight: bold;
 }
 
-#profile-img{
+#profile_img{
     position: relative;
     display:inline;
     float: left;
+    border: 1px solid black;
 }
 
 .tweet{
     border: 1px solid #808080;
     background-color: #aaaaaa;
     margin: 10px 0px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     font-size: 17px;
+    box-shadow: 2px 2px 5px black;
 }
 
-.tweet-img{
+.tweet_img{
     float: left;
-    padding-right: 20px;
-
+    margin-right: 20px;
+    border: 1px solid black;
 }

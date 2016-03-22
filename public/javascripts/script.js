@@ -55,6 +55,11 @@ function init() {
             });
         }
     });
+    $('#twitter_input').on('keyup', function (e) {
+        if (e.keyCode == 13)
+            fetchData();
+    });
+
 };
 
 $(document).on('ready', init);
